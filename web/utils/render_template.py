@@ -68,6 +68,8 @@ async def render_page(id: str, secure_hash: str, src: str = None) -> str:
     # Step 6: Prepare file name safely
     file_name = file_data.file_name.replace("_", " ") if file_data.file_name else f"File_{id}.mkv"
 
+    tg_link = f"https://t.me/{BOT_USERNAME}?start=file_{id}"
+
     # Step 7: Render template with values
     return template.render(
         file_name=file_name,
@@ -78,4 +80,5 @@ async def render_page(id: str, secure_hash: str, src: str = None) -> str:
         disclaimer=rexbots_template.DISCLAIMER,
         report_link=rexbots_template.REPORT_LINK,
         colours=rexbots_template.COLOURS,
+        tg_button=tg_link,
     )

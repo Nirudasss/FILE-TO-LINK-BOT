@@ -136,7 +136,7 @@ async def start(client, message):
         return
 	    
 @Client.on_callback_query()
-async def cb_handler(client: Client, query: CallbackQuery):
+async def cb_handler(client, query):
     if query.data == "close_data":
         await query.message.delete()
     elif query.data == "about":
@@ -156,11 +156,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇᴅ •', url=CHANNEL),
-	    InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ •', url=SUPPORT)
+            InlineKeyboardButton(' ᴜᴘᴅᴀᴛᴇᴅ ', url=CHANNEL),
+	    InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ ', url=SUPPORT)
         ],[
-            InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
+            InlineKeyboardButton(' ʜᴇʟᴘ ', callback_data='help'),
+            InlineKeyboardButton(' ᴀʙᴏᴜᴛ ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_caption(

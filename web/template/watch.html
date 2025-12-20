@@ -312,19 +312,19 @@
     });
 
     function mx_player() {
-      const clean = window.location.href.replace("/watch/", "/dl/");
+      const clean = "{{ file_url }}";
       window.location.href = `intent:${clean}#Intent;package=com.mxtech.videoplayer.ad;type=video/*;scheme=https;end`;
     }
     function vlc_player() {
-      const clean = window.location.href.replace("/watch/", "/dl/");
-      window.location.href = `vlc://${clean}`;
+      const clean = "{{ file_url }}";
+      window.location.href = `intent:${clean}#Intent;package=org.videolan.vlc;type=video/*;scheme=https;end`;
     }
     function playit_player() {
-      const clean = window.location.href.replace("/watch/", "/dl/");
+      const clean = "{{ file_url }}";
       window.location.href = `intent:${clean}#Intent;package=com.playit.videoplayer;type=video/*;scheme=https;end`;
     }
     function streamDownload() {
-      window.location.href = window.location.href.replace("/watch/", "/dl/");
+      window.location.href = "{{ file_url }}";
     }
     function showLinkModal(url) {
       if (url) window.open(url, "_blank");
