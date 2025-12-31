@@ -15,7 +15,7 @@ BOT_USERNAME = environ.get("BOT_USERNAME", 'Radhaji_FileStream_Bot')
 
 # 🔗 __Channel & Support Links__
 CHANNEL = environ.get('CHANNEL', 'https://t.me/EZ_Request_Grp')
-SUPPORT = environ.get('SUPPORT', 'https://t.me/RexBots_Official')
+SUPPORT = environ.get('SUPPORT', 'https://t.me/Radha_Rani_Backup')
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/PRESIDENTIND7')
 HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/Radha_Rani_Backup')
 
