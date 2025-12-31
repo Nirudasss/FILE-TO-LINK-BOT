@@ -2,7 +2,7 @@ from os import environ, getenv
 from Script import script
 
 # 🚀 __Bot Configuration__
-SESSION = environ.get('SESSION', 'RexBots')  # Session name
+SESSION = environ.get('SESSION', 'EliteBotz')  # Session name
 API_ID = int(environ.get('API_ID', '10660564'))
 API_HASH = environ.get('API_HASH', '527e6297989f4e7cda5091f5bf41d0e4')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
