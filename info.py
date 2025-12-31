@@ -3,25 +3,25 @@ from Script import script
 
 # 🚀 __Bot Configuration__
 SESSION = environ.get('SESSION', 'RexBots')  # Session name
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '10660564'))
+API_HASH = environ.get('API_HASH', '527e6297989f4e7cda5091f5bf41d0e4')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7239597095:AAHUIBW1u-HIpOFbYWzbLR1Ze_xZqV49mJI')
 
 # 👑 __Owner & Admins__
-ADMINS = [int(i) for i in environ.get('ADMINS', '').split()]
-AUTH_CHANNEL = [int(i) for i in environ.get("AUTH_CHANNEL", "").split()]
-OWNER_USERNAME = environ.get("OWNER_USERNAME", 'RexBots_Official')
-BOT_USERNAME = environ.get("BOT_USERNAME", 'RexBots_Official')
+ADMINS = [int(i) for i in environ.get('ADMINS', '7737048829').split()]
+AUTH_CHANNEL = [int(i) for i in environ.get("AUTH_CHANNEL", "-1002386857422").split()]
+OWNER_USERNAME = environ.get("OWNER_USERNAME", 'PRESIDENTIND7')
+BOT_USERNAME = environ.get("BOT_USERNAME", 'Radhaji_FileStream_Bot')
 
 # 🔗 __Channel & Support Links__
-CHANNEL = environ.get('CHANNEL', 'https://t.me/RexBots_Official')
+CHANNEL = environ.get('CHANNEL', 'https://t.me/EZ_Request_Grp')
 SUPPORT = environ.get('SUPPORT', 'https://t.me/RexBots_Official')
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/RexBots_Official')
-HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/RexBots_Official')
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/PRESIDENTIND7')
+HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/Radha_Rani_Backup')
 
 # 📢 __Log Channels__
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", ''))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-'))
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1002755386002'))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1002755386002'))
 PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", ''))
 VERIFIED_LOG = int(environ.get('VERIFIED_LOG', ''))
 SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", ""))
