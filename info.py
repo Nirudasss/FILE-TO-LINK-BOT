@@ -5,7 +5,7 @@ from Script import script
 SESSION = environ.get('SESSION', 'RexBots')  # Session name
 API_ID = int(environ.get('API_ID', '10660564'))
 API_HASH = environ.get('API_HASH', '527e6297989f4e7cda5091f5bf41d0e4')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7239597095:AAHUIBW1u-HIpOFbYWzbLR1Ze_xZqV49mJI')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # 👑 __Owner & Admins__
 ADMINS = [int(i) for i in environ.get('ADMINS', '7737048829').split()]
@@ -42,7 +42,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
 # 💾 __Database Configuration__
-DB_URL = environ.get('DATABASE_URI', "")
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://dasniru929:dasniru123@cluster0.51p5e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = environ.get('DATABASE_NAME', "rexlinkbot")
 
 # 📸 __Media & Images__
